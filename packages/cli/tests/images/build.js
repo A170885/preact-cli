@@ -14,10 +14,10 @@ exports.default = {
 	'ssr-build/ssr-bundle.css': 2346,
 	'ssr-build/ssr-bundle.css.map': 3603,
 
-	'bundle.cb5bc.js': 21563,
-	'bundle.cb5bc.js.map': 86009,
-	'bundle.cb5bc.legacy.js': 22586,
-	'bundle.cb5bc.legacy.js.map': 107151,
+	'bundle.263af.js': 21563,
+	'bundle.263af.js.map': 86009,
+	'bundle.263af.legacy.js': 22586,
+	'bundle.263af.legacy.js.map': 107151,
 	'bundle.6329a.css': 1173,
 	'bundle.6329a.css.map': 2165,
 
@@ -173,7 +173,7 @@ exports.publicPath = `
 	</head>
 	<body>
 		<h1>Public path test</h1>
-		<script type="__PREACT_CLI_DATA__">%7B%22preRenderData%22:%7B%22url%22:%22/%22%7D%7D</script>
+		<script type="__PREACT_CLI_DATA__">%7B%22prerenderData%22:%7B%22url%22:%22/%22%7D%7D</script>
 		<script type="module" src="/example-path/bundle.\\w{5}.js"></script>
 		<script nomodule="" src="/example-path/dom-polyfills.\\w{5}.js"></script>
 		<script nomodule="" src="/example-path/es-polyfills.js"></script>
