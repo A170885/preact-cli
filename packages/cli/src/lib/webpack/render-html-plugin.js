@@ -131,8 +131,8 @@ module.exports = async function renderHTMLPlugin(config, env) {
 							config
 						),
 						env,
-						preRenderData: values,
-						CLI_DATA: { preRenderData: { url, ...routeData } },
+						prerenderData: values,
+						CLI_DATA: { prerenderData: { url, ...routeData } },
 						ssr: config.prerender ? await prerender(config, values) : '',
 						entrypoints,
 					},
