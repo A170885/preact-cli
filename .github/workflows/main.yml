@@ -1,0 +1,15 @@
+- name: Vertex AI Notebook Review Action
+  # You may pin to the exact commit or the version.
+  # uses: google-github-actions/run-vertexai-notebook@31c2456386e704c0919af2a8dcb3bf6ac149e356
+  uses: google-github-actions/run-vertexai-notebook@v0.0.1
+  with:
+    # Google Cloud Storage bucket to store notebooks to be run by Vertex AI. e.g. <project-id>/nbr/source
+    gcs_source_bucket: 
+    # Google Cloud Storage bucket to store the results of the notebooks executed by Vertex AI. e.g. <project-id>/nbr/output
+    gcs_output_bucket: 
+    # Comma separated list of files to run on Vertex AI. e.g. mynotebook.ipynb, somedir/**.pynb. It is expected that this is the output from an action like ```dorny/paths-filter```
+    allowlist: 
+    # Type of Vertex AI machine to run notebooks on e.g. n1-standard-4
+    vertex_machine_type: # optional, default is n1-standard-4
+    # Google Cloud region e.g. us-central1, us-east4
+    region: # optional, default is us-central1
